@@ -18,9 +18,11 @@ def find_greater_pair(src)
     element_index = 0
   while element_index < src[row_index].count do
     new_array.push(src[row_index].max)
+    row_index += 1
   end
-  row_index += 1
+  element_index += 1
 end
+new_array
 end
 
 def total_even_pairs(src)
