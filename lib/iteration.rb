@@ -14,13 +14,10 @@ def find_greater_pair(src)
   
   new_array = []
   row_index = 0
-  while row_index < src.count do
-    element_index = 0
-  while element_index < src[row_index].count do
-    new_array.push(src[row_index].max)
-    row_index += 1
-  end
-  element_index += 1
+  while row_index < src.length do
+    compare = src[row_index]
+    new_array.push(compare.max)
+    row_index += 1 
 end
 new_array
 end
