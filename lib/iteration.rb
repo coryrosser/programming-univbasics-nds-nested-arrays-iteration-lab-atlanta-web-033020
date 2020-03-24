@@ -4,9 +4,9 @@ def join_ingredients(src)
   
   row_index = 0
 while row_index < src.count do
-  element_index = 0
+  food = src[row_index]
   while element_index < src[row_index].count do
-    new_array.push("I love #{src[row_index][0]} and #{src[row_index][1]} on my pizza")
+    new_array.push("I love #{food[0]} and #{food[1]} on my pizza")
   end
   row_index += 1
 end
